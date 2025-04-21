@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Event Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>College Event Registration Form</h2>
+
+    <form>
+      <div class="section">
+        <h3 >Student Details</h3>
+        
+        <label>Full Name:
+          <input type="text" name="student_name" required placeholder="your name">
+        </label>
+        
+        <label>Student ID:
+          <input type="text" name="student_id" required  required placeholder="Admission number">
+        </label>
+        
+        <label>Department & Section:
+          <input type="text" name="student_department" required  required placeholder="[ex:Btech cse-x]:">
+        </label>
+        
+        <label>Email:
+          <input type="email" name="student_email" required  required placeholder="Your college email preferable">
+        </label>
+        
+        <label>Phone:
+          <input type="tel" name="student_phone" required placeholder="+91xxxxxxxxxx" >
+        </label>
+      </div> 
+      <div class="section">
+
+      <h3>Type of Event</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="event_type" value="Technical"> Technical</label>
+        <label><input type="checkbox" name="event_type" value="Non-Technical"> Non-Technical</label>
+      </div>
+      </div>
+        <div class="section">
+          <h3>Technical Events</h3>
+  <div class="checkbox-group">
+          <label><input type="checkbox" name="event_category" value="Hackathon"> Hackathon</label>
+          <label><input type="checkbox" name="event_category" value="Coding Bootcamp"> Coding Bootcamp</label>
+          <label><input type="checkbox" name="event_category" value="Tech Talk"> Tech Talk</label>
+          <label><input type="checkbox" name="event_category" value="AI & Machine Learning Conference"> AI & Machine Learning Conference</label>
+          <label><input type="checkbox" name="event_category" value="Cybersecurity Seminar"> Cybersecurity Seminar</label>
+          <label><input type="checkbox" name="event_category" value="Other"> Other</label>
+   </div>  
+          <label>If other, please describe:
+            <input type="text" name="tech_other_description">
+          </label>
+        </div>
+
+        <div class="section">
+          <h3>Non-Technical Events</h3>
+      
+          <div class="event-group">
+              <label><input type="checkbox" name="event_category" value="Music Competition"> Music Competition</label>
+              <label><input type="checkbox" name="event_category" value="Dance Battle"> Dance Battle</label>
+              <label><input type="checkbox" name="event_category" value="Drama & Skit Performance"> Drama & Skit Performance</label>
+              <label><input type="checkbox" name="event_category" value="Open Mic"> Open Mic (Poetry, Comedy, Storytelling)</label>
+              <label><input type="checkbox" name="event_category" value="Fashion Show"> Fashion Show</label>
+            </div>
+            <label>If other, please describe:
+              <input type="text" name="tech_other_description">
+              </label>
+      <div class="section">
+        <h3>Event Details</h3>
+
+<label>Participation Type:</label>
+<select name="participation_type" required>
+    <option value="individual">Individual</option>
+    <option value="team">Team</option>
+</select>
+
+<div id="team-name-field" style="display: none;">
+    <label>Team Name:
+        <input type="text" name="team_name">
+    </label>
+</div>
+
+<label>Preferred Event Date Technical:</label>
+<input type="date" name="event_date" required>
+
+<label>Preferred Time Slot Technical Event:</label>
+<select name="event_time_slot" required>
+    <option value="morning">Morning (9 AM - 12 PM)</option>
+    <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+    <option value="evening">Evening (5 PM - 8 PM)</option>
+</select>
+
+<label>Preferred Event Date Non Technical:</label>
+<input type="date" name="event_date" required>
+
+<label>Preferred Time Slot Non Technical Event:</label>
+<select name="event_time_slot" required>
+    <option value="morning">Morning (9 AM - 12 PM)</option>
+    <option value="afternoon">Afternoon (1 PM - 4 PM)</option>
+    <option value="evening">Evening (5 PM - 8 PM)</option>
+</select>
+
+        
+      
+
+      <div class="section">
+        <h3>Guest Participation</h3>
+        
+        <label>Are you inviting any external guests?
+          <select name="inviting_guests">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+        
+        <label>If yes, please provide names:
+          <textarea name="guest_names" rows="4"></textarea>
+        </label>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.container {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+label {
+  display: block; 
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+select {
+  height: 45px;
+  background-color: #fff;
+}
+
+.checkbox-group event-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.event-group event-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.event-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  background-color: transparent;
+  display:inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✔';
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section {
+  margin-top: 30px;
+  border-top: 1px solid #1f1414;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  background-color: #ebecea;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #f07109;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2cee13;
+}
